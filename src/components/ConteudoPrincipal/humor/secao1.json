@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "titulo": "Filme",
+        "caminho": "/public/galeria/humor/poster_06-1.svg"
+    },
+    {
+        "id": 2,
+        "titulo": "Filme",
+        "caminho": "/public/galeria/humor/poster_06.svg"
+    },
+    {
+        "id": 3,
+        "titulo": "Filme",
+        "caminho": "/public/galeria/humor/poster_07-1.svg"
+    },
+    {
+        "id": 4,
+        "titulo": "Filme",
+        "caminho": "/public/galeria/humor/poster_07.svg"
+    },
+    {
+        "id": 5,
+        "titulo": "Filme",
+        "caminho": "/public/galeria/humor/poster_08.svg"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "titulo": "Bojack Horseman",
+        "path": "/galeria/em-alta/poster_01.svg"
+    },
+    {
+        "id": 2,
+        "titulo": "Ozark",
+        "path": "/galeria/em-alta/poster_02.svg"
+    },
+    {
+        "id": 3,
+        "titulo": "A vizinha da mulher na janela",
+        "path": "/galeria/em-alta/poster_03.svg"
+    },
+    {
+        "id": 4,
+        "titulo": "Breaking Bad",
+        "path": "/galeria/em-alta/poster_04.svg"
+    },
+    {
+        "id": 5,
+        "titulo": "The end of the fucking world",
+        "path": "/galeria/em-alta/poster_05.svg"
+    }
+]
