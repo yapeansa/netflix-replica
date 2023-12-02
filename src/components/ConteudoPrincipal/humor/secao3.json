@@ -2,26 +2,26 @@
     {
         "id": 11,
         "titulo": "Filme",
-        "caminho": "/public/galeria/humor/poster_14.svg"
+        "caminho": "/galeria/humor/poster_14.svg"
     },
     {
         "id": 12,
         "titulo": "Filme",
-        "caminho": "/public/galeria/humor/poster_15.svg"
+        "caminho": "/galeria/humor/poster_15.svg"
     },
     {
         "id": 13,
         "titulo": "Filme",
-        "caminho": "/public/galeria/humor/poster_16.svg"
+        "caminho": "/galeria/humor/poster_16.svg"
     },
     {
         "id": 14,
         "titulo": "Filme",
-        "caminho": "/public/galeria/humor/poster_17.svg"
+        "caminho": "/galeria/humor/poster_17.svg"
     },
     {
         "id": 15,
         "titulo": "Filme",
-        "caminho": "/public/galeria/humor/poster_18.svg"
+        "caminho": "/galeria/humor/poster_18.svg"
     }
 ]
