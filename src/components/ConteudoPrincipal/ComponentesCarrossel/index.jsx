@@ -1,11 +1,11 @@
+import { useState } from 'react';
+import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import ComponenteSecao from '../ComponenteSecao';
 import TituloSecao from '../../TituloSecao';
 import { Wrapper, SecaoCarosel } from './ComponentesEstilizados';
 import primeiraSecao from '../humor/secao1.json';
 import segundaSecao from '../humor/secao2.json';
 import terceiraSecao from '../humor/secao3.json';
-import { useState } from 'react';
-import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
 const ComponentesCarrossel = () => {
 
@@ -56,7 +56,7 @@ const ComponentesCarrossel = () => {
                     <TituloSecao>{item.titulo}</TituloSecao>
                     <Wrapper>
                         {item.secoes.map(lista =>
-                            <SecaoCarosel id={`section${lista.id}`} key={lista.id + 1}>
+                            <SecaoCarosel key={lista.id + 1} id={`section${lista.id}`}>
                                 <a href={`#section${iden}`} className="arrow__btn" onClick={() => aoClicar("avancar")}>
                                     <SlArrowRight color="#FFF" size={40} />
                                 </a>
@@ -64,7 +64,7 @@ const ComponentesCarrossel = () => {
                                     <SlArrowLeft color="#FFF" size={40} />
                                 </a>
                                 {lista.secao.map(imagem =>
-                                    <a href="https://www.google.com" key={imagem.id + 2} className="thumbnail">
+                                    <a key={imagem.id + 2} href="https://www.google.com" className="thumbnail">
                                         <img src={imagem.caminho} alt={imagem.titulo} />
                                     </a>
                                 )}
