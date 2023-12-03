@@ -151,7 +151,7 @@ const Navegacao = () => {
             <Container>
                 <MenuWrap>
                     <Separador>
-                        <img src={logo} alt="logo" />
+                        <a href="index.html"><img src={logo} alt="logo" /></a>
                         <MenuNav>
                             <ul>
                                 {menu.map(item => <li key={item.id}><a href="#">{item.titulo}</a></li>)}
