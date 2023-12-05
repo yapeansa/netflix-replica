@@ -1,6 +1,7 @@
 import Container from '@/components/Container';
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { styled } from 'styled-components';
+import { v4 as uuidv4 } from 'uuid';
 
 const Rodape = styled.footer`
     margin-top: 35px;
@@ -64,10 +65,22 @@ const BotaoCodigo = styled.button`
 const Footer = () => {
 
     const mosaico = [
-        ["Idioma e legendas", "Imprensa", "Privacidade", "Entre em contato"],
-        ["Audiodescrição", "Relações com investidores", "Avisos legais"],
-        ["Centro de ajuda", "Carreiras", "Preferência de cookies"],
-        ["Cartão pré-pago", "Termos de uso", "Informações corporativas"]
+        {
+            id: 1,
+            lista: ["Idioma e legendas", "Imprensa", "Privacidade", "Entre em contato"]
+        },
+        {
+            id: 2,
+            lista: ["Audiodescrição", "Relações com investidores", "Avisos legais"]
+        },
+        {
+            id: 3,
+            lista: ["Centro de ajuda", "Carreiras", "Preferência de cookies"]
+        },
+        {
+            id: 4,
+            lista: ["Cartão pré-pago", "Termos de uso", "Informações corporativas"]
+        }
     ];
 
     return (
@@ -81,10 +94,10 @@ const Footer = () => {
                         <a href="https://youtube.com" target="_blank"><FaYoutube size={28} color="var(--branco)" /></a>
                     </Sociais>
                     <MosaicoDeTexto>
-                        {mosaico.map(lista =>
-                            <ul>
-                                {lista.map(item =>
-                                    <li><a href="#">{item}</a></li>
+                        {mosaico.map(objeto =>
+                            <ul key={objeto.id}>
+                                {objeto.lista.map(item =>
+                                    <li key={uuidv4()}><a href="#">{item}</a></li>
                                 )}
                             </ul>
                         )}

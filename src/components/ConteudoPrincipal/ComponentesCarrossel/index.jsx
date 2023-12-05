@@ -11,19 +11,19 @@ const ComponentesCarrossel = () => {
 
     const series = [
         {
-            id: 1,
+            id: '1',
             titulo: "Séries excêntricas de humor ácido",
             secoes: [
                 {
-                    id: 1,
+                    id: 'a',
                     secao: primeiraSecao
                 },
                 {
-                    id: 2,
+                    id: 'b',
                     secao: segundaSecao
                 },
                 {
-                    id: 3,
+                    id: 'c',
                     secao: terceiraSecao
                 }
             ]
@@ -56,7 +56,7 @@ const ComponentesCarrossel = () => {
                     <TituloSecao>{item.titulo}</TituloSecao>
                     <Wrapper>
                         {item.secoes.map(lista =>
-                            <SecaoCarosel key={lista.id + 1} id={`section${lista.id}`}>
+                            <SecaoCarosel key={lista.id} id={`section${lista.id}`}>
                                 <a href={`#section${iden}`} className="arrow__btn" onClick={() => aoClicar("avancar")}>
                                     <SlArrowRight color="#FFF" size={40} />
                                 </a>
@@ -64,7 +64,7 @@ const ComponentesCarrossel = () => {
                                     <SlArrowLeft color="#FFF" size={40} />
                                 </a>
                                 {lista.secao.map(imagem =>
-                                    <a key={imagem.id + 2} href="https://www.google.com" className="thumbnail">
+                                    <a key={imagem.id} href="https://www.google.com" className="thumbnail">
                                         <img src={imagem.caminho} alt={imagem.titulo} />
                                     </a>
                                 )}
