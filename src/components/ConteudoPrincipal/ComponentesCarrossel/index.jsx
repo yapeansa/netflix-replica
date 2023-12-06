@@ -15,15 +15,15 @@ const ComponentesCarrossel = () => {
             titulo: "Séries excêntricas de humor ácido",
             secoes: [
                 {
-                    id: 'a',
+                    id: 1,
                     secao: primeiraSecao
                 },
                 {
-                    id: 'b',
+                    id: 2,
                     secao: segundaSecao
                 },
                 {
-                    id: 'c',
+                    id: 3,
                     secao: terceiraSecao
                 }
             ]
