@@ -16,7 +16,7 @@ const Conteudo = styled.div`
 const GaleriaContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(5, auto);
-    margin: 20px 0;
+    margin: 30px 0 0;
     position: relative;
     gap: 9px;
     a {

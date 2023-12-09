@@ -12,7 +12,7 @@ const SecaoCarosel = styled.div`
     display: grid;
     position: relative;
     grid-template-columns: repeat(5, auto);
-    margin: 20px 0;
+    margin: 30px 0 20px;
     gap: 9px;
     .arrow__btn {
         position: absolute;
