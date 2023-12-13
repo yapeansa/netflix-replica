@@ -38,6 +38,13 @@ const Separador = styled.div`
         width: 32px;
         height: 32px;
     }
+    .acao-btn {
+        color: var(--branco);
+        transition: all .3s ease-out;
+        &:hover {
+            color: var(--vermelho-principal);
+        }
+    }
 `;
 
 const MenuNav = styled.nav`
@@ -160,10 +167,10 @@ const Navegacao = () => {
                     </Separador>
                     <Separador $espacamento="18px">
                         <Botao>
-                            <FaSearch color="var(--branco)" size={24} />
+                            <FaSearch className="acao-btn" size={24} />
                         </Botao>
                         <Botao>
-                            <FaBell color="var(--branco)" size={24} />
+                            <FaBell className="acao-btn" size={24} />
                         </Botao>
                         <DropDown $opcoes={opcoes}>
                             <div onClick={() => setOpcoes(!opcoes)}>

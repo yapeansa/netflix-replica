@@ -18,6 +18,13 @@ const Sociais = styled.div`
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
+    .social-btn {
+        color: var(--branco);
+        transition: all .3s ease-out;
+        &:hover {
+            color: var(--vermelho-principal);
+        }
+    }
 `;
 
 const MosaicoDeTexto = styled.div`
@@ -88,10 +95,10 @@ const Footer = () => {
             <Container>
                 <ContainerRodape>
                     <Sociais>
-                        <a href="https://facebook.com" target="_blank"><FaFacebookF size={28} color="var(--branco)" /></a>
-                        <a href="https://instagram.com" target="_blank"><FaInstagram size={28} color="var(--branco)" /></a>
-                        <a href="https://twitter.com" target="_blank"><FaTwitter size={28} color="var(--branco)" /></a>
-                        <a href="https://youtube.com" target="_blank"><FaYoutube size={28} color="var(--branco)" /></a>
+                        <a href="https://facebook.com" target="_blank"><FaFacebookF size={28} className="social-btn" /></a>
+                        <a href="https://instagram.com" target="_blank"><FaInstagram size={28} className="social-btn" /></a>
+                        <a href="https://twitter.com" target="_blank"><FaTwitter size={28} className="social-btn" /></a>
+                        <a href="https://youtube.com" target="_blank"><FaYoutube size={28} className="social-btn" /></a>
                     </Sociais>
                     <MosaicoDeTexto>
                         {mosaico.map(objeto =>
